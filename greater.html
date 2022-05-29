@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Greater Number</title>
+</head>
+
+<body>
+    <h1>Find Greater number</h1>
+    <label for="fnum">Enter First No:</label>
+    <input type="text" id="fnum" placeholder="Enter first number">
+    <br><br>
+    <label for="snum">Enter Second No:</label>
+    <input type="text" id="fnum" placeholder="Enter first number">
+    <br><br>
+    <label for="tnum">Enter Third No:</label>
+    <input type="text" id="fnum" placeholder="Enter first number">
+
+    <input type="submit" onclick="greater()">
+
+    <label for="output">The greater Number is:</label>
+    <input type="text" id="output">
+
+
+    <script>
+        function greater() {
+            let a = document.getElementById('fnum').value
+            let b = document.getElementById('snum').value
+            let c = document.getElementById('tnum').value
+            let d = Number(a)
+            let e = Number(b)
+            let f = Number(c)
+
+            if (d > e > f) {
+                document.getElementById('output').value = (d);
+            }
+            else if (e > f > d) {
+                document.getElementById('output').value = (d);
+            }
+            else {
+                document.getElementById('output').value = (d);
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 style="color: Red;">See Today Date</h1>
+    <br><br>
+    <button id="run">Run</button>
+    <div>
+      <h3> Todays Date is :</h3>
+    </div>
+    <p id="para">
+    </p>
+    <script>
+        document.getElementById("run").onclick = function ()
+         {
+            myFunction()
+        };
+        function myFunction() {
+            var date = new Date();
+             var dd = date.getDate();
+             var mm = date.getMonth();
+             var yy = date.getFullYear();
+             var dayNode=document.createElement("H1");
+                var textnode=document.createTextNode("Day:"+dd+" Month: "+mm+"Year : "+yy);
+                dayNode.appendChild(textnode);
+            document.getElementById("para").appendChild(dayNode);
+        }
+    </script>
+</body>
+
+</html>

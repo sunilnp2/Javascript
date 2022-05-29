@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+        <h1>Child appears here </h1> 
+    </div>
+    <button id="run">Run</button>
+    <br>
+    <br>
+    <br>
+    <p id="para">
+    </p>
+    <script>
+        document.getElementById("run").onclick = function ()
+         {
+            myFunction()
+        };
+        function myFunction() {
+            for (var i = 0; i < 5; i++) {
+                var node = document.createElement("H2");
+                var textnode = document.createTextNode("This is add from Javascript"); 
+                node.appendChild(textnode); 
+                document.getElementById("para").appendChild(node); 
+                console.log(i);
+            }
+
+        }
+    </script>
+</body>
+
+</html>
